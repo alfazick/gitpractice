@@ -1,5 +1,6 @@
-# gitpractice
+# gitpractice #
 
-** 1 Initial config
-** 2 Basic Commands
+**1Initial config**
+
+**2Basic Commands** 
 

@@ -37,3 +37,11 @@ $ git status
 ```
 $ git commit -m "First commit."
 ```
+
+
+7) .gitignore
+
+a) create .env
+b) write your name
+c) create .gitignore at a root folder of your project
+d) add a line .env
