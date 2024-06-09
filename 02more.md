@@ -75,3 +75,36 @@ For older version of git
 We can use git checkout branch_name to switch between branches and 
 git checkout -b new_branch_name to create a new branch
 
+
+## 3 Merge Branches Simple
+
+Step 1: Switch to the Target Branch (main)
+Before merging, make sure you are on the branch that you want to update. In this case, you want to merge changes into the main branch, so you should switch to main first.
+
+Command:
+
+```
+git checkout main
+```
+
+Or, if you’re using a newer version of Git:
+
+```
+git switch main
+```
+
+Explanation:
+These commands change your current working branch to main. 
+This is important because Git merges changes into the current branch.
+
+Step 2: Merge Changes from new_feature
+Now, merge the new_feature branch into your currently active branch (main).
+
+```
+git merge new_feature
+```
+
+Explanation:
+This command brings all the commits from new_feature into main. If new_feature has any commits that main does not yet have, they will be applied in order.
+
+
