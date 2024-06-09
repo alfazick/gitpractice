@@ -45,3 +45,16 @@ a) create .env
 b) write your name
 c) create .gitignore at a root folder of your project
 d) add a line .env
+
+8) git commit -> allows to write a longer comments
+
+9) git status
+shows unstaged files (red)
+stagged files (gree)
+already commited files are snapshots and are hidden from git status command
+git status --short or -s for less output
+
+10) git log
+Options: git log --oneline --graph --decorate --color --all
+
+
