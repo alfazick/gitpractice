@@ -24,7 +24,7 @@ $ git init
 4) Run the git add . command to mark the files to be version controlled. The names of the files to be added to the Git repository come after the git add command. The . means adding all files in the current directory.
 
 ```
-$ git add .
+$ git add . / git add filename
 ```
 
 5) Run git status to preview the commit.
