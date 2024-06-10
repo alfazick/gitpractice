@@ -8,5 +8,8 @@
 
 **4Git Common Flow Control -> Done**
 
-**5Work with Branches,Remote(origin)**
+**5Work with Branches,Remote(origin) -> Done**
+
+**6Pull and Fetch -> Done**
+
 
