@@ -36,9 +36,40 @@ git push origin new_branch
 ```
 This command uploads your local new_branch to the remote repository (typically named origin), making it available for others to see and collaborate on.
 
+
 By following these steps, you ensure that your local changes are properly committed and then pushed to the remote repository under the correct branch.
+
+Delete Branch
+
+To delete a local branch in Git, you can use the git branch command with the -d or -D flag. 
+Here's how you can do it:
+
+Example
+Let's say you have a branch named new_feature that you want to delete:
+
+Safe Delete:
+```
+git branch -d new_feature
+```
+Force Delete:
+```
+git branch -D new_feature
+```
+
+Additional Notes
+Make sure you are not currently on the branch you are trying to delete. If you are, switch to another branch first:
+```
+git switch main
+```
+or
+```
+git checkout main
+```
+Always double-check that you no longer need the branch or that its changes have been safely merged into another branch before deleting it, especially when using the force delete option.
+
 
 To delete remote branch
 ```
 $ git push origin :new_branch
 ```
+
