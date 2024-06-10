@@ -109,4 +109,61 @@ This command brings all the commits from new_feature into main. If new_feature h
 
 ## 4 The git diff Command
 
+a) Basic Usage
+Working Directory vs Staging Area: Shows changes in your working directory that are not yet staged.
+```
+git diff
+```
+b) Comparing Staged Changes
+Staging Area vs Last Commit: Displays differences between staged changes and the last commit.
+```
+git diff --staged
+```
+or
+
+```
+git diff --cached  # Equivalent to --staged
+```
+c) Comparing Branches
+Between Branches: Shows differences between the tips of two branches.
+```
+git diff branch1..branch2```
+
+d) Comparing Commits
+Specific Commits: Compare the changes between two specific commits.
+```
+git diff commit1 commit2
+```
+
+Practical Example Using git diff
+Consider you have made changes across several files and you want to review the differences before committing:
+
+Create and modify files:
+```
+echo "Initial content" > example.txt
+git add example.txt
+echo "More changes" >> example.txt
+```
+
+View Changes:
+```
+git diff  # Shows changes in 'example.txt' that are not yet staged
+```
+
+Stage and Commit:
+```
+git add .
+git commit -m "Initial commit"
+echo "Additional post-commit changes" >> example.txt
+```
+
+View Staged Changes vs Last Commit:
+
+```
+git add example.txt
+git diff --staged
+```
+This command line interaction illustrates how to track changes at each step, ensuring you understand what will be included in each commit.
+
+Overall, git diff is a versatile tool for examining changes in your Git repository, allowing for careful tracking and management of your codebase.
 
