@@ -37,3 +37,8 @@ git push origin new_branch
 This command uploads your local new_branch to the remote repository (typically named origin), making it available for others to see and collaborate on.
 
 By following these steps, you ensure that your local changes are properly committed and then pushed to the remote repository under the correct branch.
+
+To delete remote branch
+```
+$ git push origin :new_branch
+```
