@@ -107,4 +107,6 @@ git merge new_feature
 Explanation:
 This command brings all the commits from new_feature into main. If new_feature has any commits that main does not yet have, they will be applied in order.
 
+## 4 The git diff Command
+
 
